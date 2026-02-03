@@ -1,5 +1,5 @@
 import Card from "./shared/Card";
-
+import PropTypes from "prop-types";
 function FeedbackItem({ item }) {
   return (
     <Card reverse={true}>
@@ -8,4 +8,7 @@ function FeedbackItem({ item }) {
     </Card>
   );
 }
+FeedbackItem.propTypes = {
+  item: PropTypes.object.isRequired,
+};
 export default FeedbackItem;
