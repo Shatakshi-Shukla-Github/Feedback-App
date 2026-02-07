@@ -1,7 +1,8 @@
 function FeedbackStats({ feedback }) {
-  let average = Math.floor(
-    feedback.reduce((acc, cur) => acc + cur.rating, 0) / feedback.length,
-  );
+  let average =
+    feedback.reduce((acc, cur) => {
+      return acc + cur.rating;
+    }, 0) / feedback.length;
   // const decimal = (num) => {
   //   return Number.parseFloat(num).toFixed(1);
   // };

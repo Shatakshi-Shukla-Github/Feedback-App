@@ -1,11 +1,11 @@
 const FeedbackData=[ {
       id: 1,
-      rating: 5,
+      rating: 9,
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
     },
  {
       id: 2,
-      rating: 7,
+      rating: 8,
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer",
     },
  {
