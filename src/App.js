@@ -5,6 +5,7 @@ import FeedbackData from "./data/FeedbackData";
 import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import AboutPage from './pages/AboutPage';
+import Post from './pages/Post';
 import {useState} from "react";
 import {v4 as uuidv4} from "uuid";
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
@@ -34,6 +35,7 @@ function App() {
       }>
       </Route>
       <Route path="/about" element={<AboutPage/>}/>
+      <Route path="/post/:id/:name" element={<Post/>}/>
     </Routes>
     <AboutIconLink/>
     </div>
