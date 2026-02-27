@@ -13,11 +13,6 @@ import AboutIconLink from './components/AboutIconLink';
 import { FeedbackProvider } from './components/context/FeedbackContext';
 function App() {
   const [feedback,setFeedback]=useState(FeedbackData);
-  const deleteFeedback=(id)=>{
-    if(window.confirm("Are you sure you want to delete this feedback?")===true){
-      setFeedback(feedback.filter((item)=>item.id!==id))
-    }
-  }
   const addFeedback=(newFeedback)=>{
     newFeedback.id=uuidv4();
     setFeedback([newFeedback,...feedback])
@@ -30,9 +25,9 @@ function App() {
       <Routes>
       <Route exact path="/" element={
         <>
-          <FeedbackStats feedback={feedback}/>
+          <FeedbackStats/>
       <FeedbackForm handleAdd={addFeedback}/>
-      <FeedbackList feedback={feedback} handleDelete={deleteFeedback}/>
+      <FeedbackList/>
         </>
       }>
       </Route>
