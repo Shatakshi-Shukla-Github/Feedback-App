@@ -1,0 +1,20 @@
+{
+  "feedback": [
+    {
+      "id": "1",
+      "rating": 10,
+      "text": "This is Feedback-1 coming from backend"
+    },
+    {
+      "id": "2",
+      "rating": 8,
+      "text": "This is Feedback-2 coming from backend"
+    },
+    {
+      "id": "3",
+      "rating": 7,
+      "text": "This is Feedback-3 coming from backend"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
