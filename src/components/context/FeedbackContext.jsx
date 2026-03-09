@@ -37,6 +37,14 @@ export const FeedbackProvider = ({ children }) => {
     const data = await response.json();
     setFeedback([data, ...feedback]);
   };
+  // addFeedback Explanation:-
+  // 1) In await function only this function waits and the rest of React App continues running normally
+  // 2) fetch() sends an HTTP request to the server.
+  // 3) method:"POST" means that you are telling the JSON server to add this new feedback to the database
+  // 4) Headers tell the server what kind of data you're sending and in this case we are sending JSON. It acts as the label indicating that this package contains JSON
+  // 5) The body is the actual data you're sending to the server. But HTTP requests only send strings, not objects. So we convert the object into JSON text.
+  // 6) Updating React State happens like this:- NEW ITEM(data) + OLD ARRAY(feedback) that means the new feedback always appears at the top
+
   const editFeedback = (item) => {
     setFeedbackEdit({
       item,
