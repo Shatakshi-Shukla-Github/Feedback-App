@@ -11,9 +11,9 @@
       "text": "This is Feedback-3 coming from backend"
     },
     {
-      "id": "f704",
-      "text": "My name is Shatakshi",
-      "rating": 7
+      "text": "My name is Shatovic",
+      "rating": 9,
+      "id": "f704"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
