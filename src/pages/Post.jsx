@@ -1,6 +1,6 @@
 import Card from "../components/shared/Card";
 import { useParams } from "react-router-dom";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 function Post() {
   const params = useParams();
